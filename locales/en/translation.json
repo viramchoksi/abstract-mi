@@ -1,0 +1,203 @@
+{
+    "header": {
+        "subTitle": "INTERCHAIN APP PLATFORM",
+        "title": "Personalized Apps for Web3 Power Users",
+        "title_first": "Personalized Apps ",
+        "title_second": "for Web3 Power Users",
+        "description": "It’s hard to find web3 apps that fit your exact needs. Abstract gives you personalized apps all in one place so you can save time and take back control over your web3 life.",
+        "developer": {
+            "on-chain": [
+                {
+                    "title": "Explore",
+                    "icon": "/images/explore.svg",
+                    "url": "https://console.abstract.money/modules",
+                    "subTitle": "Contract Registry"
+                },
+                {
+                    "title": "Resolve",
+                    "icon": "/images/resolve.svg",
+                    "url": "https://console.abstract.money/ans",
+                    "subTitle": "Asset, Contract & Chain Name Service"
+                },
+                {
+                    "title": "Smart Wallets",
+                    "icon": "/images/smart.svg",
+                    "url": "https://console.abstract.money/",
+                    "subTitle": "Transform UX with Account Abstraction"
+                },
+                {
+                    "title": "Integrate",
+                    "icon": "/images/integrate.svg",
+                    "url": "https://docs.abstract.money/3_framework/6_module_types.html?highlight=adapter#adapters",
+                    "subTitle": "Integrate Seamlessly use any DeFi primitive"
+                }
+            ],
+            "off-chain": [
+                {
+                    "title": "CW-Orchestrator",
+                    "icon": "/images/orchestator.svg",
+                    "url": "https://orchestrator.abstract.money",
+                    "subTitle": "Deploy / Interact / Test"
+                },
+                {
+                    "title": "Abstract API",
+                    "icon": "/images/abstract.svg",
+                    "url": "https://api.abstract.money",
+                    "subTitle": "GraphQL API for frontend development"
+                }
+            ]
+        },
+        "Get started building Abstract apps": "Get started building Abstract apps",
+        "Learn to build with Abstract basics in 10 minutes": "Learn to build with Abstract basics in 10 minutes",
+        "Documentation": "Documentation",
+        "GitHub": "GitHub",
+        "documentation": [
+            {
+                "title": "CosmWasm Libraries and SDKs",
+                "url": "https: //github.com/abstractsdk/abstract"
+            },
+            {
+                "title": "Frontend SDK",
+                "url": "https: //github.com/AbstractSDK/abstract.js"
+            },
+            {
+                "title": "Modules",
+                "url": "https: //github.com/AbstractSDK/abstract/tree/main/modules/contracts"
+            },
+            {
+                "title": "Abstract API",
+                "url": "https: //api.abstract.money"
+            },
+            {
+                "title": "Example Apps",
+                "url": "https: //github.com/AbstractSDK/abstract/tree/main/modules/contracts/apps"
+            }
+        ],
+        "DECENTRALIZED EXCHANGES": "DECENTRALIZED EXCHANGES",
+        "CHAINS": "CHAINS"
+    },
+    "allApps": {
+        "applications": [
+            {
+                "title": "Equilibrium",
+                "description": "Autobalanced Portfolio",
+                "icon": "/images/equilibrium.svg"
+            },
+            {
+                "title": "Stake2Talk",
+                "description": "Get paid if someone wastes your time",
+                "icon": "/images/Stake2Talk.svg"
+            },
+            {
+                "title": "P4id",
+                "description": "Send payment requests in crypto",
+                "icon": "/images/P4id.svg"
+            },
+            {
+                "title": "Wallet Assist",
+                "description": "AI + Crypto",
+                "icon": "/images/Wallet.svg"
+            },
+            {
+                "title": "Snackerino",
+                "description": "Cosmos Snacks",
+                "icon": "/images/Snackerino.svg"
+            },
+            {
+                "title": "Croncat",
+                "description": "1 click crypto automations",
+                "icon": "/images/Croncat.svg"
+            }
+        ],
+        "browse-all-apps": "Browse all apps"
+    },
+    "discover": {
+        "Discover new apps": "Discover new apps",
+        "that make your life easier": "that make your life easier",
+        "title": "Apps that make your web3 life easier",
+        "description": "MINI APPS THAT SOLVE PROBLEMS SO YOU HAVE MORE TIME TO FOCUS ON WHAT MATTERS.",
+        "miniDescription": "Modulized mini web3 apps",
+        "webApps": [
+            {
+                "alt": "equilibrium",
+                "src": "/images/equilibrium.svg"
+            },
+            {
+                "alt": "P4id",
+                "src": "/images/star-app.svg"
+            },
+            {
+                "alt": "wallet",
+                "src": "/images/m-app.svg"
+            }
+        ],
+        "firstContent": {
+            "subTitle": "YOUR WEB3 APP STORE",
+            "title": "",
+            "description": "Select from a variety of applications that enhance your daily crypto handling, from asset management to informed decision-making."
+        },
+        "secondContent": {
+            "subTitle": "PERSONALIZED DEFI",
+            "title": "Customized applications for your DeFi life",
+            "description": "Engage with applications that align with your financial strategies, providing tools for asset growth.",
+            "mobileImage": "/images/glassCube.svg",
+            "desktopImage": "/images/stone.svg",
+            "alt": "glass-cube"
+        },
+        "thirdContent": {
+            "subTitle": "ABSTRACT SDK",
+            "title": "Develop full-stack apps with pre-audited modules",
+            "description": "Using our pre-audited modules makes it easy and fast to build interchain apps.",
+            "mobileImage": "/images/metalBalls.svg",
+            "desktopImage": "/images/metalBalls.svg",
+            "alt": "metal-balls"
+        }
+    },
+    "steps": [
+        {
+            "title": "Install Apps in One Click",
+            "description": "Try now, worry later. You can use Abstract apps right away from our app store without a lengthy setup process.",
+            "icon": "/images/direction.svg"
+        },
+        {
+            "title": "Gasless Transactions",
+            "description": "Try out all Abstract apps without worrying about getting tokens. We have you covered.",
+            "icon": "/images/drop.svg"
+        },
+        {
+            "title": "Interchain Portal",
+            "description": "Abstract works across the Interchain. That means you can move your funds and access apps freely without worrying about bridging.",
+            "icon": "/images/interchain.svg"
+        }
+    ],
+    "faq": {
+        "title": "Frequently Asked Questions",
+        "subTitle": "Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae.",
+        "questions": [
+            {
+                "que": "Does Abstract have a token?",
+                "ans": "Abstract does not have a token."
+            },
+            {
+                "que": "What chains does Abstract support?",
+                "ans": "Abstract is chain-agnostic, and can be deployed anywhere supporting CosmWasm. Non CW chains are supported via ICA."
+            },
+            {
+                "que": "How do I pay for gas?",
+                "ans": "Gas is paid for by fees on chains Abstract is deployed on. As a user, your experience will be gasless."
+            },
+            {
+                "que": "Do I need a wallet?",
+                "ans": "Abstract is your interchain wallet, though there are still sign-in options available for existing wallets."
+            },
+            {
+                "que": "Can I acess existing apps?",
+                "ans": "Yes! Any app available on the interconnected IBC ecosystem will be available to access via your Abstract Account."
+            },
+            {
+                "que": "Can I build my own Abstract App?",
+                "ans": "Yes, yes, and yes! Get started by checking out the developers section and follow the guided tutorials."
+            }
+        ]
+    }
+}

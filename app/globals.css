@@ -1,0 +1,198 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background-color: black;
+  color: white;
+}
+
+body::-webkit-scrollbar {
+  width: 0 !important;
+  display: none !important;
+}
+
+.menu-container {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.5s ease-out;
+}
+
+.menu-container.open {
+  max-height: 100dvh;
+  /* Set your desired max height */
+}
+
+
+.hamburger-menu {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 24px;
+  width: 30px;
+  position: relative;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+  width: 20px;
+  height: 1px;
+  background-color: #fff;
+  border: 1px solid #fff;
+  /* Set the color to white */
+  margin: 1px 0;
+  transition: 0.4s;
+}
+
+/* Animation for bars when the menu is open */
+.hamburger-menu.open .bar1 {
+  transform: rotate(-45deg) translate(-8px, 6px);
+}
+
+.hamburger-menu.open .bar2 {
+  opacity: 0;
+}
+
+.hamburger-menu.open .bar3 {
+  transform: rotate(45deg) translate(-7px, -6px);
+}
+
+.shadow-box {
+  background: radial-gradient(72.95% 112.16% at 98.06% 21.57%, rgba(117, 253, 248, 0.10) 0%, rgba(117, 253, 248, 0.00) 100%), #161616;
+}
+
+.shadow-box-2 {
+  background: radial-gradient(72.95% 112.16% at 1.94% 21.57%, rgba(117, 253, 248, 0.10) 0%, rgba(117, 253, 248, 0.00) 100%), #161616;
+}
+
+.inner-box {
+  box-shadow: 0px 0px 44px 0px rgba(115, 255, 250, 0.20), 0px 0px 17px 0px rgba(255, 220, 107, 0.30);
+}
+
+.transition-max-height {
+  transition-property: max-height;
+}
+
+.max-h-screen {
+  max-height: 100dvh;
+}
+
+html,
+body,
+div {
+  overscroll-behavior: none;
+}
+
+.max-h-0 {
+  max-height: 0;
+}
+
+.Collapsible__trigger {
+  display: flex;
+  justify-content: start;
+  column-gap: 25px;
+  font-weight: 400;
+  align-items: center;
+}
+
+.Collapsible__trigger.is-closed svg,
+.Collapsible__trigger.is-open svg {
+  transition: all 0.2s ease;
+}
+
+.Collapsible__trigger.is-open svg {
+  transform: rotate(180deg);
+}
+
+.main-gradient {
+  background: linear-gradient(180deg, rgba(67, 221, 215, 0.10) 0%, rgba(67, 221, 215, 0.00) 100%);
+}
+
+li,
+ul,
+a,
+input {
+  outline: none;
+
+}
+
+li:focus,
+ul:focus,
+a:focus,
+input:focus {
+  outline: none;
+}
+
+button:focus-visible {
+  outline: none;
+}
+
+hr {
+  height: 1px;
+  background-color: #222222;
+  border: none;
+}
+
+@media screen and (max-width: 640px) {
+  .hide-overflow {
+    overflow: hidden;
+  }
+}
+
+select {
+  padding: 5px;
+  padding-inline: 15px;
+  font-size: 21px;
+  border-radius: 5px;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  color: #333;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 1px;
+  text-overflow: '';
+}
+
+select:focus,
+option:focus {
+  outline: none;
+  border: none;
+}
+
+/* Style the options */
+option {
+  font-size: 20px;
+  /* Adjust the font size for options */
+  background-color: #333;
+  color: #333;
+}
+
+/* Style the select when it's focused */
+select:focus {
+  outline: none;
+  border-color: #5cb3fd;
+  box-shadow: 0 0 5px rgba(92, 179, 253, 0.7);
+}

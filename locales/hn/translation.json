@@ -1,0 +1,84 @@
+{
+    "header": {
+        "subTitle": "INTERCHAIN APP PLATFORM",
+        "title": "Personalized Apps for Web3 Power Users",
+        "title_second": "for Web3 Power Users",
+        "description": "It’s hard to find web3 apps that fit your exact needs. Abstract gives you personalized apps all in one place so you can save time and take back control over your web3 life."
+    },
+    "allApps": {
+        "applications": [
+            {
+                "title": "Equilibrium",
+                "description": "Autobalanced Portfolio",
+                "icon": "/images/equilibrium.svg"
+            },
+            {
+                "title": "Stake2Talk",
+                "description": "Get paid if someone wastes your time",
+                "icon": "/images/Stake2Talk.svg"
+            },
+            {
+                "title": "P4id",
+                "description": "Send payment requests in crypto",
+                "icon": "/images/P4id.svg"
+            },
+            {
+                "title": "Wallet Assist",
+                "description": "AI + Crypto",
+                "icon": "/images/Wallet.svg"
+            },
+            {
+                "title": "Snackerino",
+                "description": "Cosmos Snacks",
+                "icon": "/images/Snackerino.svg"
+            },
+            {
+                "title": "Croncat",
+                "description": "1 click crypto automations",
+                "icon": "/images/Croncat.svg"
+            }
+        ]
+    },
+    "discover": {
+        "Discover new apps": "Discover new apps",
+        "that make your life easier": "that make your life easier",
+        "title": "Apps that make your web3 life easier hindi",
+        "description": "MINI APPS THAT SOLVE PROBLEMS SO YOU HAVE MORE TIME TO FOCUS ON WHAT MATTERS.",
+        "miniDescription": "Modulized mini web3 apps",
+        "webApps": [
+            {
+                "alt": "equilibrium",
+                "src": "/images/equilibrium.svg"
+            },
+            {
+                "alt": "P4id",
+                "src": "/images/star-app.svg"
+            },
+            {
+                "alt": "wallet",
+                "src": "/images/m-app.svg"
+            }
+        ],
+        "firstContent": {
+            "subTitle": "YOUR WEB3 APP STORE",
+            "title": "",
+            "description": "Select from a variety of applications that enhance your daily crypto handling, from asset management to informed decision-making."
+        },
+        "secondContent": {
+            "subTitle": "PERSONALIZED DEFI",
+            "title": "Customized applications for your DeFi life",
+            "description": "Engage with applications that align with your financial strategies, providing tools for asset growth.",
+            "mobileImage": "/images/glassCube.svg",
+            "desktopImage": "/images/stone.svg",
+            "alt": "glass-cube"
+        },
+        "thirdContent": {
+            "subTitle": "ABSTRACT SDK",
+            "title": "Develop full-stack apps with pre-audited modules",
+            "description": "Using our pre-audited modules makes it easy and fast to build interchain apps.",
+            "mobileImage": "/images/metalBalls.svg",
+            "desktopImage": "/images/metalBalls.svg",
+            "alt": "metal-balls"
+        }
+    }
+}
