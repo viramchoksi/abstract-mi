@@ -1,30 +1,29 @@
-'use client';
+"use client";
 
-import translationEN from '@/locales/en/translation.json';
-import translationHN from '@/locales/hn/translation.json';
-import i18n from 'i18next';
-import { Suspense, useEffect, useState } from 'react';
-import { initReactI18next } from 'react-i18next';
-import AbstractSteps from './AbstractSteps';
-import AllApps from './AllApps';
-import Discover from './Discover';
-import FAQ from './FAQ';
-import Header from './Header';
-import SkyWithStarts from './SkyWithStarts';
-import SocialLinks from './SocialLinks';
-import Loader from './components/Loader';
+import translationEN from "@/locales/en/translation.json";
+import i18n from "i18next";
+import { Suspense, useEffect, useState } from "react";
+import { initReactI18next } from "react-i18next";
+import AbstractSteps from "./AbstractSteps";
+import AllApps from "./AllApps";
+import Discover from "./Discover";
+import FAQ from "./FAQ";
+import Header from "./Header";
+import SkyWithStarts from "./SkyWithStarts";
+import SocialLinks from "./SocialLinks";
+import Loader from "./components/Loader";
 
 export default function Home() {
   const [isMenuOpen, setMenuOpen] = useState(false);
-  const [overflowClass, setOverflowClass] = useState('');
+  const [overflowClass, setOverflowClass] = useState("");
 
   useEffect(() => {
     if (isMenuOpen) {
       setTimeout(() => {
-        setOverflowClass('hide-overflow');
+        setOverflowClass("hide-overflow");
       }, 300);
     } else {
-      setOverflowClass('');
+      setOverflowClass("");
     }
   }, [isMenuOpen]);
 
@@ -38,8 +37,8 @@ export default function Home() {
     .use(initReactI18next) // passes i18n down to react-i18next
     .init({
       resources,
-      lng: 'en', // if you're using a language detector, do not define the lng option
-      fallbackLng: 'en',
+      lng: "en", // if you're using a language detector, do not define the lng option
+      fallbackLng: "en",
 
       interpolation: {
         escapeValue: false, // react already safes from xss => https://www.i18next.com/translation-function/interpolation#unescape
@@ -47,7 +46,7 @@ export default function Home() {
     });
 
   return (
-    <main className='h-screen'>
+    <main className="h-screen">
       <Suspense fallback={<Loader />}>
         <Header isMenuOpen={isMenuOpen} setMenuOpen={setMenuOpen} />
         <div

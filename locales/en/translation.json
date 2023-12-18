@@ -4,6 +4,8 @@
         "title": "Personalized Apps for Web3 Power Users",
         "title_first": "Personalized Apps ",
         "title_second": "for Web3 Power Users",
+        "description_first": "It’s hard to find web3 apps that fit your exact needs.",
+        "description_second": "Abstract gives you personalized apps all in one place so you can save time and take back control over your web3 life.",
         "description": "It’s hard to find web3 apps that fit your exact needs. Abstract gives you personalized apps all in one place so you can save time and take back control over your web3 life.",
         "developer": {
             "on-chain": [
@@ -140,7 +142,7 @@
             "subTitle": "PERSONALIZED DEFI",
             "title": "Customized applications for your DeFi life",
             "description": "Engage with applications that align with your financial strategies, providing tools for asset growth.",
-            "mobileImage": "/images/glassCube.svg",
+            "mobileImage": "/images/stone.png",
             "desktopImage": "/images/stone.svg",
             "alt": "glass-cube"
         },
@@ -148,8 +150,8 @@
             "subTitle": "ABSTRACT SDK",
             "title": "Develop full-stack apps with pre-audited modules",
             "description": "Using our pre-audited modules makes it easy and fast to build interchain apps.",
-            "mobileImage": "/images/metalBalls.svg",
-            "desktopImage": "/images/metalBalls.svg",
+            "mobileImage": "/images/metalBalls.png",
+            "desktopImage": "/images/metalBalls.png",
             "alt": "metal-balls"
         }
     },

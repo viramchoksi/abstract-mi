@@ -193,6 +193,5 @@ option {
 /* Style the select when it's focused */
 select:focus {
   outline: none;
-  border-color: #5cb3fd;
-  box-shadow: 0 0 5px rgba(92, 179, 253, 0.7);
+  border: none;
 }

@@ -1,12 +1,12 @@
-import { Inter } from 'next/font/google';
-import localFont from 'next/font/local';
-import './globals.css';
+import { Inter } from "next/font/google";
+import localFont from "next/font/local";
+import "./globals.css";
 
-import { siteData } from '@/data/allApps';
+import { siteData } from "@/data/allApps";
 
-const inter = Inter({ subsets: ['latin'] });
-const kade = localFont({ src: './Kade.ttf' });
-const monaSans = localFont({ src: './Mona-Sans.ttf' });
+const inter = Inter({ subsets: ["latin"] });
+const kade = localFont({ src: "./Kade.ttf" });
+const monaSans = localFont({ src: "./Mona-Sans.ttf" });
 
 export const metadata = {
   title: siteData.header.titleMeta,
@@ -15,10 +15,8 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang='en'>
+    <html lang="en">
       <body className={kade.className}>{children}</body>
     </html>
   );
 }
-
-
