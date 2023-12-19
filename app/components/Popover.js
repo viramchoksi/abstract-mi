@@ -1,6 +1,6 @@
 import { Popover, Transition } from "@headlessui/react";
 import Image from "next/image";
-import { Fragment } from "react";
+import { Fragment, useRef } from "react";
 
 const solutions = [
   {
@@ -23,6 +23,8 @@ const solutions = [
   },
 ];
 
+const timeoutDuration = 10;
+
 export default function PopoverMenu({
   title,
   menu,
@@ -30,75 +32,98 @@ export default function PopoverMenu({
   content,
   left = "left-1/2",
 }) {
+  const triggerRef = useRef();
+  const timeOutRef = useRef();
+
+  const handleEnter = (isOpen) => {
+    clearTimeout(timeOutRef.current);
+    !isOpen && triggerRef.current?.click();
+  };
+
+  const handleLeave = (isOpen) => {
+    timeOutRef.current = isOpen && triggerRef.current?.click();
+  };
+
   return (
     <div className="md:fixed flex-1">
-      <Popover className="md:relative">
-        {({ open }) => (
-          <>
-            <Popover.Button className="md:p-2 w-full font-semibold  text-gray-400  py-1 items-center flex justify-between hover:text-white">
-              {haveExtra ? (
-                <div className="flex items-center gap-x-2">
-                  <p>Integrations</p>
-                  <div className="text-xs text-[#F1CE5B] bg-[#453224] rounded-xl py-1 px-2">
-                    12
-                  </div>
-                </div>
-              ) : (
-                <span>{title}</span>
-              )}
-              <Image
-                src={"images/aroow.svg"}
-                height={10}
-                width={10}
-                alt="arrow"
-                className="md:hidden"
-              />
-            </Popover.Button>
-            <Transition
-              as={Fragment}
-              enter="transition ease-out duration-200"
-              enterFrom="opacity-0 translate-y-1"
-              enterTo="opacity-100 translate-y-0"
-              leave="transition ease-in duration-150"
-              leaveFrom="opacity-100 translate-y-0"
-              leaveTo="opacity-0 translate-y-1"
-            >
-              <div>
-                <div className="absolute left-1/2 -translate-x-1/2 top-[10px] overflow-hidden h-4 z-20">
-                  <svg
-                    width="40"
-                    height="40"
-                    viewBox="0 0 26 26"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <rect
-                      x="12.7842"
-                      y="-0.828369"
-                      width="18.9951"
-                      height="18.9951"
-                      rx="2"
-                      transform="rotate(45 12.7842 -0.828369)"
-                      fill="#141414"
-                      stroke="#222222" // Gray border color
-                      stroke-width="1.5" // Border width
-                    />
-                  </svg>
-                </div>
-                <Popover.Panel
-                  className={`absolute top-0 z-10 md:mt-0 mt-0 overflow-y-auto w-screen md:max-w-lg -translate-x-1/2 transform px-5 md:px-0 lg:max-w-xl xl:max-w-2xl max-h-[85dvh]  ${left}`}
-                >
-                  <div className="overflow-hidden rounded-lg shadow-lg ring-1 ring-black/5">
-                    <div className="relative bg-[#141414] rounded-lg p-7 md:mt-6 border-[#222222] border-2">
-                      {content}
+      <Popover.Group
+        onMouseEnter={() => window.innerWidth > 780 && handleEnter(open)}
+        onMouseLeave={() => window.innerWidth > 780 && handleLeave(open)}
+      >
+        <Popover className="md:relative">
+          {({ open }) => (
+            <>
+              <Popover.Button
+                onMouseEnter={() =>
+                  window.innerWidth > 780 && handleEnter(open)
+                }
+                ref={triggerRef}
+                className="md:p-2 w-full font-semibold  text-gray-400  py-1 items-center flex justify-between hover:text-white"
+              >
+                {haveExtra ? (
+                  <div className="flex items-center gap-x-2">
+                    <p>Integrations</p>
+                    <div className="text-xs text-[#F1CE5B] bg-[#453224] rounded-xl py-1 px-2">
+                      12
                     </div>
                   </div>
-                </Popover.Panel>
-              </div>
-            </Transition>
-          </>
-        )}
-      </Popover>
+                ) : (
+                  <span>{title}</span>
+                )}
+                <Image
+                  src={"images/aroow.svg"}
+                  height={10}
+                  width={10}
+                  alt="arrow"
+                  className="md:hidden"
+                />
+              </Popover.Button>
+              <Transition
+                as={Fragment}
+                enter="transition ease-out duration-200"
+                enterFrom="opacity-0 md:translate-y-1"
+                enterTo="opacity-100 md:translate-y-0"
+                leave="transition ease-in duration-150"
+                leaveFrom="opacity-100 md:translate-y-0"
+                leaveTo="opacity-0 md:translate-y-1"
+              >
+                <div>
+                  <div className="absolute left-1/2 -translate-x-1/2 top-[-6px] overflow-hidden h-4 z-20 hidden md:block">
+                    <svg
+                      width="40"
+                      height="40"
+                      viewBox="0 0 26 26"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <rect
+                        x="12.7842"
+                        y="-0.828369"
+                        width="18.9951"
+                        height="18.9951"
+                        rx="2"
+                        transform="rotate(45 12.7842 -0.828369)"
+                        fill="#141414"
+                        stroke="#222222" // Gray border color
+                        stroke-width="1.5" // Border width
+                      />
+                    </svg>
+                  </div>
+                  <Popover.Panel
+                    className={`absolute top-0 z-10 md:mt-0 mt-0 overflow-y-auto w-screen md:max-w-lg -translate-x-1/2 transform px-5 md:px-0 lg:max-w-xl xl:max-w-2xl max-h-[85dvh]  ${left}`}
+                  >
+                    <div className="overflow-hidden rounded-lg shadow-lg ring-1 ring-black/5">
+                      <div className="relative bg-[#141414] rounded-lg p-7 md:mt-2 border-[#222222] border-2">
+                        {content}
+                      </div>
+                    </div>
+                  </Popover.Panel>
+                </div>
+              </Transition>
+            </>
+          )}
+        </Popover>
+      </Popover.Group>
     </div>
   );
 }

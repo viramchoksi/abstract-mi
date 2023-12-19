@@ -29,7 +29,7 @@ const Header = ({ isMenuOpen, setMenuOpen }) => {
   return (
     <div
       style={{}}
-      className="flex flex-col   mb-5 pt-[15px] fixed top-0 w-full h-[80px] bg-black z-10"
+      className="flex flex-col   mb-5 pt-[15px] fixed top-0 w-full h-[80px] bg-black z-30"
     >
       <nav id="nav" className="shadow" role="navigation">
         <div className="max-w-[1120px] mx-auto md:p-4 py-4 flex flex-wrap items-center md:flex-no-wrap">
@@ -273,7 +273,7 @@ const Documentation = () => {
             target="_blank"
             className="flex gap-x-3"
           >
-            <p className="text-white text-sm">{t("header.Github")}</p>
+            <p className="text-white text-sm">{t("header.GitHub")}</p>
             <Image
               src={"/images/redirection.svg"}
               width={15}
