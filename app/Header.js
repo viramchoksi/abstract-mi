@@ -320,7 +320,7 @@ const Integrations = () => {
     {
       title: "Kujira",
       icon: "/images/Kujira.svg",
-      url: "https://kujira.app",
+      url: "https://fin.kujira.network",
       subTitle: null,
     },
     {
@@ -364,7 +364,7 @@ const Integrations = () => {
     {
       title: "Kujira",
       icon: "/images/Kujira.svg",
-      url: "https://neutron.org",
+      url: "https://kujira.network",
       subTitle: null,
     },
     {
